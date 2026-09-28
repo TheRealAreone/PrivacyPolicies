@@ -25,6 +25,16 @@ text, so nothing on this site makes a network request to a third party.
 If a policy's facts ever change (a new SDK, a permission, a data flow), update the page
 in the same commit as the code change so the published claim stays true.
 
+Only state what is true and checkable. The ScoreSquad page once described the app as
+"open-source" and linked to the ScoreSquad repo so readers could audit it — but that repo
+is private, so the claim was false and the link led nowhere. It now points readers at
+Android's app info permission list, which anyone can check without a repo. If ScoreSquad
+is ever made public, a licence still has to be added: a public repo with no `LICENSE` is
+source-available, not open source.
+
+Google Play requires only a **publicly reachable policy URL**. It does not require the app
+source to be public, so a policy in this repo is enough on its own.
+
 ## Adding another app
 
 Once a second app needs a policy, make the root a simple index of links and give each app
