@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ScoreSquad Privacy Policy</title>
-<meta name="description" content="Privacy Policy for ScoreSquad, an offline scorekeeping app for Android and desktop. ScoreSquad collects no data and transmits nothing.">
+<title>Privacy Policies</title>
+<meta name="description" content="Privacy policies for independent apps by Sean McLaughlin. Each app's policy is published as a static page on this site.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0B1B3A">
 <style>
@@ -62,7 +62,6 @@
     padding-top: 0.2rem;
     letter-spacing: -0.005em;
   }
-  h3 { font-size: 1rem; margin: 1.4rem 0 0.4rem; }
   p, ul { margin: 0 0 1rem; }
   ul { padding-left: 1.25rem; }
   li { margin-bottom: 0.35rem; }
@@ -77,18 +76,24 @@
   }
   .summary p:last-child { margin-bottom: 0; }
   .summary strong { display: block; margin-bottom: 0.25rem; }
-  table { width: 100%; border-collapse: collapse; margin: 0 0 1rem; font-size: 0.95rem; }
-  th, td { text-align: left; vertical-align: top; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--line); }
-  th { width: 12rem; font-weight: 600; }
-  .tag {
-    display: inline-block;
-    background: var(--accent);
-    color: var(--accent-fg);
-    font-size: 0.8rem;
-    font-weight: 600;
-    padding: 0.1rem 0.5rem;
-    border-radius: 999px;
+  .policies {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    overflow: hidden;
   }
+  .policies li + li { border-top: 1px solid var(--line); }
+  .policies a {
+    display: block;
+    padding: 1rem 1.15rem;
+    color: inherit;
+    text-decoration: none;
+  }
+  .policies a:hover { background: var(--card); }
+  .policies .name { font-weight: 600; display: block; }
+  .policies .desc { color: var(--muted); font-size: 0.92rem; display: block; }
   footer {
     margin-top: 2.5rem;
     padding-top: 1.25rem;
@@ -106,184 +111,29 @@
 <main>
 
 <header>
-  <p class="app">Privacy Policy</p>
-  <h1>ScoreSquad</h1>
+  <p class="app">Privacy Policies</p>
+  <h1>App privacy policies</h1>
   <p class="meta">
-    Last updated: <time datetime="2026-09-28">September 28, 2026</time><br>
-    Applies to the ScoreSquad app for Android and for desktop (Windows, macOS, Linux).
+    Policies for independent apps by Sean McLaughlin. Each policy is a static page on this
+    site; none of them load external resources or make network requests.
   </p>
 </header>
 
-<div class="summary">
-  <strong>The short version</strong>
-  <p>
-    ScoreSquad <strong>collects no data, sends nothing anywhere, and shares nothing with
-    anyone</strong> — including the developer. It works entirely offline. Everything you
-    enter stays in a database on your own device or computer, and it is deleted when you
-    delete it or uninstall the app. There are no accounts, no ads, and no trackers.
-  </p>
-</div>
-
-<h2 id="who-we-are">1. Who we are</h2>
-<p>
-  ScoreSquad is an independent scorekeeping app developed and published by
-  Sean McLaughlin ("the developer"), the sole operator of the app. There is no company
-  behind it and no third party involved in running it. Contact details are in
-  <a href="#contact-us">section 12</a>.
-</p>
-
-<h2 id="information-the-app-collects">2. Information the app collects</h2>
-<p>
-  <strong>None.</strong> ScoreSquad has no sign-up, no login, and no way for you to
-  identify yourself to the app. It does not ask for an email address, phone number,
-  name, location, contacts, photos, or advertising ID, and it does not read anything
-  from your device beyond what you type into it.
-</p>
-<p>
-  The app therefore has <strong>no data to sell, share, rent, or trade</strong>, and it
-  does not respond to any requests to do so.
-</p>
-
-<h2 id="information-stored-on-your-device">3. Information stored on your device</h2>
-<p>
-  To keep score, the app saves the game information you enter in a local SQLite database
-  that lives in the app's private storage on your device. This data never leaves the
-  device and is never visible to the developer.
-</p>
-<table>
-  <tbody>
-    <tr>
-      <th scope="row">What is stored</th>
-      <td>
-        The names you give to players, the game name and type, game settings such as
-        target score or number of rounds, the scores entered for each player and round,
-        and the date and time of each game session and who won.
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Where it is stored</th>
-      <td>
-        On Android, in the app's private internal storage, which other apps cannot read.
-        On desktop, in a <code>score_tracker.db</code> file inside the app's own folder
-        on your computer.
-      </td>
-    </tr>
-    <tr>
-      <th scope="row">Who can read it</th>
-      <td>Only you, on the device or computer where you entered it.</td>
-    </tr>
-    <tr>
-      <th scope="row">What is <em>not</em> stored</th>
-      <td>
-        No account identifier, email address, phone number, advertising ID, precise or
-        approximate location, IP address, contacts, photos, files, or usage analytics.
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p>
-  <span class="tag">Offline by design</span>
-  ScoreSquad has no server, no sign-in, and no cloud sync. It is not possible to view or
-  recover your data through us, because we never receive it. On Android the app does not
-  even declare the <code>INTERNET</code> permission, so the operating system does not
-  permit it to open a network connection at all. You can confirm this yourself: Android's
-  app info screen for ScoreSquad lists the permissions the app holds, and
-  <code>INTERNET</code> is not among them.
-</p>
-
-<h2 id="how-your-information-is-used">4. How your information is used</h2>
-<p>
-  Your local data is used for one purpose only: showing your scores, your game history,
-  and the winner while the app is open on your device. It is not used for advertising,
-  profiling, model training, analytics, or any other purpose, because it is never
-  transmitted anywhere it could be used for those things.
-</p>
-
-<h2 id="sharing-and-disclosure">5. Sharing and disclosure</h2>
-<p>
-  <strong>We do not share your data with anyone</strong> — no advertisers, no analytics
-  providers, no data brokers, no social networks, no cloud hosts, and no other third
-  parties. We do not sell or share personal information, and we have never received any
-  to share.
-</p>
-<p>
-  Because no data reaches us, there is nothing for us to disclose in response to a
-  request, subpoena, or legal process. If a valid legal order required disclosure of
-  your information, we could not comply, as we do not hold it.
-</p>
-
-<h2 id="third-party-services-and-advertising">6. Third-party services and advertising</h2>
-<p>
-  ScoreSquad contains <strong>no third-party SDKs, advertising networks, analytics
-  services, crash reporters, or trackers</strong>, and it displays no ads and no
-  sponsored content. The app is built with the Flet UI framework and the SQLAlchemy
-  database library, which run entirely on your device and send nothing externally.
-</p>
-
-<h2 id="data-retention-and-deletion">7. Data retention and deletion</h2>
-<p>
-  Your game data is kept on your device only for as long as you keep it there. You can
-  remove it at any time, and it is never retained by the developer:
-</p>
-<ul>
-  <li><strong>Delete a game:</strong> use the delete option on a game in the app's history.</li>
-  <li><strong>Delete everything:</strong> clear the app's storage or uninstall the app. On Android, uninstalling ScoreSquad also removes its database. On desktop, delete the <code>score_tracker.db</code> file in the app folder.</li>
-  <li><strong>No recovery by us:</strong> because the app has no cloud backup and we hold no copy, deleted data cannot be restored by us or anyone else.</li>
+<h2 id="policies">Apps</h2>
+<ul class="policies">
+  <li>
+    <a href="scoresquad/">
+      <span class="name">ScoreSquad</span>
+      <span class="desc">Offline scorekeeping app for Android and desktop. Collects no data and transmits nothing.</span>
+    </a>
+  </li>
 </ul>
-<p>
-  Your device's own operating-system backup (for example, Google backup on Android) may
-  include the app's database. That is controlled by your device settings and your
-  operating system vendor, not by the developer.
-</p>
-
-<h2 id="security">8. Security</h2>
-<p>
-  Because your data is never transmitted, it cannot be intercepted, hacked, or leaked
-  through us. It is stored only in the app's private storage. As with any software on
-  your device, keeping your operating system and the app updated, and using a screen
-  lock, are the best protection for the data you enter.
-</p>
-
-<h2 id="childrens-privacy">9. Children's privacy</h2>
-<p>
-  ScoreSquad is a general-audience scorekeeping app and is not directed at children under
-  13. It collects no personal information from anyone, including children, so it is not
-  subject to the Children's Online Privacy Protection Act (COPPA) or similar rules. Since
-  the app has no accounts, there is no age or identity verification to perform, and no
-  information is knowingly collected from minors.
-</p>
-
-<h2 id="your-rights-under-privacy-laws">10. Your rights under privacy laws</h2>
-<p>
-  Laws such as the GDPR and the CCPA give rights over <em>personal data</em> that a
-  company holds about you. ScoreSquad does not collect or hold any personal data, so
-  there is nothing for you to request a copy of, correct, export, or delete — and no
-  obligation to opt out of sale or sharing, because none occurs. This policy exists to
-  make that clear, not to claim an exemption from it.
-</p>
-
-<h2 id="changes-to-this-policy">11. Changes to this policy</h2>
-<p>
-  If the app or its data practices change, this page will be updated and the
-  "Last updated" date at the top will change. Continuing to use the app after an update
-  means the revised policy applies. Material changes will also be noted in the app's
-  release notes on Google Play.
-</p>
-
-<h2 id="contact-us">12. Contact us</h2>
-<p>
-  Questions about this policy, or about ScoreSquad in general, are welcome:
-</p>
-<p>
-  Sean McLaughlin<br>
-  Email: <a href="mailto:zeanerapps@gmail.com">zeanerapps@gmail.com</a>
-</p>
 
 <footer>
   <p>
-    ScoreSquad keeps your scores on your device and nowhere else.
-    This page is served from GitHub Pages and loads no external resources, so visiting
-    it does not create a tracking record.
+    Every app listed here keeps its data on your own device. If a policy is missing,
+    out of date, or unclear, contact the developer using the address in the app's
+    policy.
   </p>
 </footer>
 
